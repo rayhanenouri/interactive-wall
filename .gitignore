@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+
+# ML models and datasets — large binary files
+ml/models/*.pt
+ml/models/*.pth
+ml/models/*.onnx
+ml/models/*.pkl
+ml/data/raw/
+ml/data/processed/
+*.h5
+*.hdf5
+*.npy
+*.npz
+
+# ROS 2 build artifacts
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+
+# SDK build artifacts
+hardware/sdk/output/
+hardware/sdk/*.o
+hardware/sdk/*.a
+
+# Calibration saves (machine-specific)
+calibration/*.json
+calibration/*.npy
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Secrets
+.env
+secrets.yaml
