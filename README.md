@@ -1,9 +1,15 @@
 # Interactive Wall
 
-A projector-based multi-touch interface that transforms any flat wall into a real touchscreen using a LiDAR sensor — no physical screen required.
+The Interactive Wall is a projector-based multi-touch interface. A projector displays an appli-
+cation on a flat wall or matte surface. The RPLIDAR C1 is mounted at the base or side of the
+wall, scanning a thin horizontal plane parallel to the wall surface. When a user places a finger on
+the wall, the finger enters the laser scan plane and appears as an object significantly closer than
+the wall baseline. The software detects this intrusion, identifies its position in physical space,
+maps it to screen coordinates, and injects it into the operating system as a genuine touch event.
+The PC application responds exactly as if the user touched a real touchscreen.
 
 ## System Overview
-A laser scanner mounted at the wall base detects finger intrusions via baseline subtraction. Detected touch coordinates are mapped to screen space using a homography transform and injected into the Linux kernel as genuine multitouch events. A ML gesture classifier built on PyTorch adds swipe, tap, hold, and multi-finger recognition in real time.
+A sensor mounted at the wall base detects finger intrusions via baseline subtraction. Detected touch coordinates are mapped to screen space using a homography transform and injected into the Linux kernel as genuine multitouch events. A ML gesture classifier built on PyTorch adds swipe, tap, hold, and multi-finger recognition in real time.
 
 ## Hardware
 
