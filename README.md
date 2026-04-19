@@ -47,4 +47,4 @@ cd demo && python3 wall_grabber.py
 
 ## Author
 
-Rayhane Nouri — Embedded Software Engineering, Maker Skills Internship 2025
+Rayhane Nouri — Embedded Software Engineer
